@@ -4,41 +4,239 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./libraries/bootstrap/css/bootstrap.css" />
     <title>Studio</title>
+    <link rel="stylesheet" href="./libraries/bootstrap/css/bootstrap.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container">
+   <!-- Navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Disabled</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+            <button class="btn btn-outline" type="submit">Sign In</button>
+            <button class="btn btn-primary" type="submit">Sign Up</button>
           </form>
         </div>
+      </nav>
+    </div>
+    <!-- Header -->
+    <section>
+      <header class="text-center">
+          <h1>Percayakan Kualitas Pada Kami</h1>
+          <p class="mt-5">
+            Mitra Kami Sudah Membuktikan
+            <br />
+            Kini Giliran anda mencobanya
+          </p>
+          <a class="btn btn-primary" type="button" href="#">Rent Now</a>
+      </header>
+    </section>
+
+    <!-- Popular Product -->
+    <section class="section-popular-product" id="productPopular">
+     <div class="container">
+      <div class="row">
+       <div class="text-center">
+        <h1>Product Popular</h1>
+       </div>
       </div>
-    </nav>
+     </div>
+    </section>
+
+    <section class="section-popular-content"> 
+     <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+       <div class="col">
+         <div class="card h-100">
+           <img src="./img/pic-3.png" class="card-img-top" alt="pic-3">
+           <div class="card-body">
+            <h5 class="card-title">Canon G7X</h5>
+           </div>
+           
+            <ul class="list-group list-group-flush">
+             <li class="list-group-item"><b>1x</b> Battery</li>
+             <li class="list-group-item"><b>1x</b> Lensa Kit</li>
+             <li class="list-group-item"><b>1x</b> Memory 8GB</li>
+             <li class="list-group-item"><b>1x</b> Tas Kamera</li>
+            </ul>
+          
+           <div class="card-footer">
+             <small class="text-muted"><b>Rp</b> 75.000</small>
+           </div>
+         </div>
+       </div>
+       <div class="col">
+         <div class="card h-100">
+           <img src="./img/pic-1.png" class="card-img-top" alt="picture-1">
+           <div class="card-body">
+            <h5 class="card-title">Canon 1200D</h5>
+           </div>
+           
+            <ul class="list-group list-group-flush">
+             <li class="list-group-item"><b>1x</b> Battery</li>
+             <li class="list-group-item"><b>1x</b> Lensa Kit</li>
+             <li class="list-group-item"><b>1x</b> Memory 8GB</li>
+             <li class="list-group-item"><b>1x</b> Tas Kamera</li>
+            </ul>
+         
+           <div class="card-footer">
+             <small class="text-muted"><b>Rp</b> 85.000</small>
+           </div>
+         </div>
+       </div>
+       <div class="col">
+         <div class="card h-100">
+           <img src="./img/pic-2.png" class="card-img-top" alt="Pic-2">
+           <div class="card-body">
+             <h5 class="card-title">Fujifilm XA-7</h5>
+            </div>
+            
+             <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>1x</b> Battery</li>
+              <li class="list-group-item"><b>1x</b> Lensa Kit</li>
+              <li class="list-group-item"><b>1x</b> Memory 8GB</li>
+              <li class="list-group-item"><b>1x</b> Tas Kamera</li>
+             </ul>
+           
+           <div class="card-footer">
+             <small class="text-muted"><b>Rp</b> 95.000</small>
+           </div>
+         </div>
+       </div>
+     </div>
+     </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-testimonials" id="Testimonials">
+     <div class="container">
+      <div class="row">
+       <div class="text-center">
+        <h1>Testimonials</h1>
+       </div>
+      </div>
+     </div>
+    </section>
+    
+    <section class="testimonial-content">
+     <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+       <div class="col">
+         <div class="card-testimonial-content">
+           <img src="./img/profile-1.png" class="mb-4 rounded-circle" alt="profile-1">
+           <div class="card-body">
+             <h5 class="card-title">Abdul Kafi</h5>
+             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+           </div>
+         </div>
+       </div>
+
+       <div class="col">
+        <div class="card-testimonial-content">
+          <img src="./img/profile-3.png" class="mb-4 rounded-circle" alt="profile-3">
+          <div class="card-body">
+            <h5 class="card-title">Ayra Faustina</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col">
+         <div class="card-testimonial-content">
+           <img src="./img/profile-2.png" class="mb-4 rounded-circle" alt="profile-2">
+           <div class="card-body">
+             <h5 class="card-title">Michael Borneo</h5>
+             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+           </div>
+         </div>
+       </div>
+       
+     </div>
+     </div>
+     <div class="row">
+      <div class="col-12 text-center">
+       <a href="#" class="btn btn-need-help btn-outline-primary">Need Help</a>
+       <a href="#" class="btn btn-get-started btn-primary">Get Started</a>
+      </div>
+     </div>
+    </section>
+
+    <footer class="section-footer mt-5 mb-4 border-top">
+     <div class="container pt-5 pb-5">
+       <div class="row justify-content-center">
+         <div class="col-12">
+           <div class="row">
+             <div class="col-12 col-lg-3">
+               <h5>FEATURES</h5>
+               <ul class="list-unstyled">
+                 <li><a href="#">Review</a></li>
+                 <li><a href="#">Community</a></li>
+                 <li><a href="#">Social Media Kit</a></li>
+                 <li><a href="#">Affiliate</a></li>
+               </ul>
+             </div>
+             <div class="col-12 col-lg-3">
+               <h5>ACCOUNT</h5>
+               <ul class="list-unstyled">
+                 <li><a href="#">Refund</a></li>
+                 <li><a href="#">Security</a></li>
+                 <li><a href="#">Reward</a></li>
+               </ul>
+             </div>
+             <div class="col-12 col-lg-3">
+               <h5>COMPANY</h5>
+               <ul class="list-unstyled">
+                 <li><a href="#">Career</a></li>
+                 <li><a href="#">Help Center</a></li>
+                 <li><a href="#">Media</a></li>
+               </ul>
+             </div>
+             <div class="col-12 col-lg-3">
+               <h5>GET CONNECTED</h5>
+               <ul class="list-unstyled">
+                 <li><a href="#">Jakarta Selatan</a></li>
+                 <li><a href="#">Indonesia</a></li>
+                 <li><a href="#">0821-2222-8888</a></li>
+                 <li><a href="#">support@nomads.id</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="container-fluid">
+       <div
+         class="row border-top justify-content-center align-items-center pt-4"
+       >
+         <div class="col-auto text-gray-500 font-weight-light">
+           2021 Copyright Nomads - All Right Reserved - Made in Yogyakarta
+         </div>
+       </div>
+     </div>
+   </footer>
 
     <script src="./libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
